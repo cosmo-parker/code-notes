@@ -3,12 +3,11 @@
 
 ### Workflow, Technology
 
-Workflow
- * Design, Product
-
- Tehcnology
- * Stack
- * Standards
+* Workflow
+  * Design, Product
+* Tehcnology
+  * Stack
+  * Standards
 
  > Insane number of options to build web apps in the mondern age.
  > How do you begin to pick a full tech stack top to bottom, thats not going to feel completely outdated in just a few months?
@@ -16,14 +15,14 @@ Workflow
 ### Design
 
 * Desing and technology usually completely siloed.
-* Interpreting PSD files without any context can lead to frustration
+* Interpreting `psd` files without any context can lead to frustration
 * Designers don't always think of edge cases
 * Without technology involved in th design, designers don't know how far they can push it.
 
 ### Don't
 
 * Don't be that *NO* developer
-  * Sick of everything, think that everything is stupid.
+  * Sick of everything, thinks that everything is stupid.
 
 ### Prototyping
 
@@ -47,6 +46,7 @@ One of the biggest decision your going to make.
   * Heavy weight enterprise UI, or lighter view based UI
 
 ### CSS
+
 Less and Sass came out dead even.
 
 ### JS technologies
@@ -65,7 +65,7 @@ Less and Sass came out dead even.
 
 * Grunt, Gulp, Webpack.
 
-Chosse Webpack
+Chose Webpack
 
 ### Standards
 

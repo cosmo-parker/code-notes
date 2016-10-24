@@ -7,13 +7,14 @@ To improve performance
 * Always set `key` for array of components
 * Use `shouldComponentUpdate` to short circuit rendering
   * requires immutbility of state
+  * [react-redux.connect()](https://github.com/reactjs/react-redux) does this for your // my comment
 * using `setState()` or `react-redux connect()` at lower levels
 
 ### How the browser renders
 
 * The **main thread** covers Javascript, DOM, Layout (HTML, CSS)
 * DOM is the way to tell the page what to do
-  * Behind the seens their is the `Render Tree`
+  * Behind the scenes there is the `Render Tree`
   * **main thread** tries to batch those changes
   * Reduce number of DOM changes + batch the changes (React helps with this)
 
@@ -34,9 +35,11 @@ ReactDOM.render(<App />, document.querySelector('#app'))
      * Then populates the object keys with the sub objects.
      * Only when the object is complete is the actual rendering triggered
 
-* User clicks button which triggers an event with updates state
+* User clicks button which triggers an event which updates state
 
 ```
+// use shouldComponentUpdate() to check if state changed
+
 let nextItems = this.state.items
 
 nextItems.push(newItem)
@@ -56,7 +59,7 @@ this.setState({
 ### What you can do to make it even faster
 
 * When ever your creating an array of children set the keys.
-  * React can use these keys to determin which nodes should be compared.
+  * React can use these keys to determine which nodes should be compared.
 
 If there are no changes after a click
 

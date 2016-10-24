@@ -35,11 +35,14 @@ Got stuck with MVC as front end developers.
 #### Lets write React and have it target iOS and Android
 
 * We are using the same paradigms, the same life cycle methods
+
+```
+componentWillReceiveProps(nextProps) {...}
+shouldComponentUpdate(nextProps, nextState) {...}
+render() {...}
+etc....
+```
 * Same react components, remember, they are just Javascrit objects.
-
-```
-```
-
 * Use React object metadata to render Android, iOS specific components.
 * Break out `ReactDOM` form `React` and have this generalized React library taht doesn't care what it's targeting.  It just makes components.
 
@@ -53,7 +56,7 @@ Now we can do this like..  (a.k.a last mile libraries)
 * A pattern for user interfaces
 * Declarative method of declarting components
 * Components can be black boxes to each other.
-  * Component props is like is API.
+  * Component props is like it's API.
 * One way data flow
   * `props` down, `actions` up
 * Presentation components cannot mutate state, which reduces surface area for bugs.
